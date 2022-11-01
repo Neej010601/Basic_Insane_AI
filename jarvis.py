@@ -354,7 +354,7 @@ def taskExecution():
         query = takeCommand()
 
         if 'hello' in query:
-            Speak("Hello Sir, I am Jarvis 2 point o.")
+            Speak("Hello Sir, I am Insane 2 point o.")
             Speak("How May I Help You?")
         
         elif 'how are you' in query:
@@ -372,7 +372,7 @@ def taskExecution():
         
         elif 'you need a break' in query:
             Speak("Ok Sir, You Can Call me Anytime")
-            Speak("Just Say Wake Up Jarvis.")
+            Speak("Just Say Wake Up Insane.")
             break
 
         elif 'youtube search' in query:
@@ -583,7 +583,7 @@ def taskExecution():
 
                 if now == time:
                     Speak("Time to Wakeup Sir!")
-                    playsound('Jarvis Wake Up Iron Man Edition.mp3')
+                    playsound('Insane Wake Up Iron Man Edition.mp3')
                     Speak("Alarm Closed!")
                 
                 elif now>time:
