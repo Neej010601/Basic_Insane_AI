@@ -20,8 +20,8 @@ def takeCommand():
 while True:
     wake_up= takeCommand()
 
-    if 'wake up jarvis' in wake_up:
-        os.startfile("D:\\Personal Data\\Jarvis\\jarvis.py")
+    if 'wake up insane' in wake_up:
+        os.startfile("D:\\Personal Data\\Jarvis\\insane.py")
 
     else:
         print("Nothing.....")

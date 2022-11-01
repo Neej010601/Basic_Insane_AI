@@ -47,7 +47,7 @@ def takeCommand():
 
 def taskExecution():
 
-    Speak("Hello Sir, I am Jarvis")
+    Speak("Hello Sir, I am Insane")
     Speak("How May I Help You?")
 
     def Music():
@@ -232,19 +232,19 @@ def taskExecution():
 
         if 'meaning' in word:
             word = word.replace ("What is the meaning of", "")
-            word= word. replace ("jarvis", "")
+            word= word. replace ("insane", "")
             result = Diction.meanings(word)
             Speak(f"The meaning of {word} is {result}.")
         
         elif 'synonym' in word:
             word = word.replace ("What is the synonym of", "")
-            word= word. replace ("jarvis", "")
+            word= word. replace ("insane", "")
             result = Diction.synonyms(word)
             Speak(f"The synonym of {word} is {result}.")
         
         elif 'antonym' in word:
             word = word.replace ("What is the antonym of", "")
-            word= word. replace ("jarvis", "")
+            word= word. replace ("insane", "")
             result = Diction.antonyms(word)
             Speak(f"The antonym of {word} is {result}.")
         
@@ -377,7 +377,7 @@ def taskExecution():
 
         elif 'youtube search' in query:
             Speak("Ok Sir, This is What I Found for you!")
-            query= query.replace("jarvis", "")
+            query= query.replace("insane", "")
             query= query.replace("youtube search for", "")
             web= "https://www.youtube.com/results?search_query=" + query
             webbrowser.open(web)
@@ -385,14 +385,14 @@ def taskExecution():
 
         elif 'google search' in query:
             Speak("Ok Sir, This is What I Found for you!")
-            query= query.replace("jarvis", "")
+            query= query.replace("insane", "")
             query= query.replace("google search for", "")
             pywhatkit.search(query)
             Speak("Please let me know if its fine!")
 
         elif 'website' in query:
             Speak("Ok Sir, Launching.....")
-            query= query.replace("jarvis", "")
+            query= query.replace("insane", "")
             query= query.replace("website", "")
             query= query.replace(" ", "")
             web1= query.replace("open", "")
@@ -413,7 +413,7 @@ def taskExecution():
         elif 'wikipedia' in query:
             Speak("Searching Wikipedia...")
             query= query.replace("wikipedia", "")
-            query= query.replace("jarvis", "")
+            query= query.replace("insane", "")
             wiki= wikipedia.summary(query, 100)
             Speak(f"According to Wikipedia: {wiki}")
             
@@ -594,7 +594,7 @@ def taskExecution():
             
         elif 'remember that' in query:
             msg= query.replace("remember that", "")
-            msg= query.replace("jarvis", "")
+            msg= query.replace("insane", "")
             Speak(f"You tell me to remind that: {msg}")
             remember= open('data.txt', 'w')
             remember.write(msg)
@@ -606,7 +606,7 @@ def taskExecution():
 
         elif 'search on google' in query:
             import wikipedia as googleScrap
-            query = query.replace("jarvis", " ")
+            query = query.replace("insane", " ")
             query = query.replace("search", " ")
             query = query.replace("on", " ")
             query = query.replace("google", " ")
@@ -638,7 +638,7 @@ def taskExecution():
         
         elif 'how to' in query:
             Speak("Ok Sir, getting the data from internet.")
-            op = query.replace("jarvis", "")
+            op = query.replace("insane", "")
             max_result= 1
             how_to_func= search_wikihow(op, max_result)
             assert len(how_to_func) == 1
