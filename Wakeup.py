@@ -21,7 +21,7 @@ while True:
     wake_up= takeCommand()
 
     if 'wake up insane' in wake_up:
-        os.startfile("D:\\Personal Data\\Jarvis\\insane.py")
+        os.startfile("D:\\Personal Data\\Insane AI\\insane.py")
 
     else:
         print("Nothing.....")
