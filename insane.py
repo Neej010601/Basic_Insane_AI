@@ -34,7 +34,7 @@ def takeCommand():
     with sr.Microphone() as source:
         print("***Listing***")
         command.pause_threshold = 1
-        audio=command.listen(source, 0, 8)
+        audio=command.listen(source, 0, 4)
 
         try:
             print("-> Recongnizing....")
